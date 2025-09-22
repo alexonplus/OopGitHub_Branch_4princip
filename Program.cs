@@ -53,5 +53,5 @@ Skapa 1 virtual metod i MenuItem och 1 override metod i Drink
 
 ___________________________________abstraction_______________
 Skapa abstract class ItemBase och implementera ShowInfo() i MenuItem och Drink
-/*
+*/
 

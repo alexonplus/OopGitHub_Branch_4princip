@@ -20,6 +20,11 @@
             burger.Name = "Big-Mac";
             burger.SetPrice(55);
             burger.ShowInfo();
+
+            Drink cola = new Drink();
+            cola.Name = "Cola-Zero";
+            cola.SetPrice(20);
+            cola.ShowInfo();
         }
     }
 }

@@ -9,7 +9,22 @@ namespace OopGitHub_Branch_4princip
     public class MenuItem
     {
         public string Name;
-        public int Price;
+        private double Price;
+
+        public void SetPrice(double price)
+        {
+            Price = price;
+        }
+
+        public void PlusPrice(double amount)
+        {
+            Price += amount;
+        }
+            
+        public void MinusPrice(double amount)
+        {
+            Price -= amount;
+        }
 
         public void ShowInfo()
         {

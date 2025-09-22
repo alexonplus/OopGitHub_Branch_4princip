@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            
+            MenuItem pizza = new MenuItem();
+            pizza.Name = "Pizza";
+            pizza.Price =  80;
+            pizza.ShowInfo();
+
+            MenuItem burger = new MenuItem();
+            burger.Name = "Big-Mac";
+            burger.Price = 55;
+            burger.ShowInfo();
         }
     }
 }

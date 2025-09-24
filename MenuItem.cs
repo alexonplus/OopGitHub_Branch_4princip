@@ -9,7 +9,12 @@ namespace OopGitHub_Branch_4princip
     public class MenuItem
     {
         public string Name;
-        private double Price;
+        protected double Price;
+
+        public virtual void ShowInfo()
+        {
+            Console.WriteLine($"{Name} {Price}kr");
+        }
 
         public void SetPrice(double price)
         {
@@ -20,15 +25,12 @@ namespace OopGitHub_Branch_4princip
         {
             Price += amount;
         }
-            
+
         public void MinusPrice(double amount)
         {
             Price -= amount;
         }
 
-        public void ShowInfo()
-        {
-            Console.WriteLine($"{Name} {Price} kr");
-        }
+
     }
 }

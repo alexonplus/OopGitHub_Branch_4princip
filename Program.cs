@@ -6,13 +6,25 @@
         {
             MenuItem pizza = new MenuItem();
             pizza.Name = "Pizza";
-            pizza.Price =  80;
+            pizza.SetPrice(80);
             pizza.ShowInfo();
+
+            pizza.PlusPrice(10);
+            pizza.ShowInfo();
+
+            pizza.MinusPrice(20);
+            pizza.ShowInfo();
+
 
             MenuItem burger = new MenuItem();
             burger.Name = "Big-Mac";
-            burger.Price = 55;
+            burger.SetPrice(55);
             burger.ShowInfo();
+
+            Drink cola = new Drink();
+            cola.Name = "Cola-Zero";
+            cola.SetPrice(20);
+            cola.ShowInfo();
         }
     }
 }

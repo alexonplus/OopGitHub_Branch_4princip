@@ -6,14 +6,31 @@ using System.Threading.Tasks;
 
 namespace OopGitHub_Branch_4princip
 {
-    public class MenuItem
+    public   class MenuItem : MenuItemBase
     {
         public string Name;
-        public int Price;
+        protected double Price;
 
-        public void ShowInfo()
+        public override void ShowInfo()
         {
-            Console.WriteLine($"{Name} {Price} kr");
+            Console.WriteLine($"{Name} {Price}kr");
         }
+
+        public void SetPrice(double price)
+        {
+            Price = price;
+        }
+
+        public void PlusPrice(double amount)
+        {
+            Price += amount;
+        }
+
+        public void MinusPrice(double amount)
+        {
+            Price -= amount;
+        }
+
+
     }
 }

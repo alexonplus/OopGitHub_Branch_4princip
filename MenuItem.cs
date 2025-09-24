@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace OopGitHub_Branch_4princip
 {
-    public class MenuItem
+    public   class MenuItem : MenuItemBase
     {
         public string Name;
         protected double Price;
 
-        public virtual void ShowInfo()
+        public override void ShowInfo()
         {
             Console.WriteLine($"{Name} {Price}kr");
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OopGitHub_Branch_4princip
 {
-    public class Drink : MenuItem
+    public class Drink : MenuItemBase
     {
         public override void ShowInfo()
         {
